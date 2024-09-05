@@ -16,6 +16,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   display: flex;
+
+  background-color: slategrey;
 }
 
 div {
@@ -28,6 +30,7 @@ div {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
 
 code {
