@@ -28,10 +28,13 @@ function Application() {
         container.appendChild(nav);
     };
 
+
+
+
     return <>
         <div className="Application-container">
             <img className="Application-img" src="https://cdn.pixabay.com/photo/2024/05/24/19/06/bird-8785666_960_720.jpg" alt='home '></img>
-            <footer className="Application-footer" onClick={handleClick} >Appuyez pour commander</footer>
+            <footer className="Application-footer" onClick={handleClick} >Appuyez pour commencer</footer>
         </div>
     </>;
 }
