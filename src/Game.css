@@ -1,0 +1,12 @@
+.playGame {
+    width: 1vw;
+    height: 10vw;
+    text-align: center;
+}
+
+.Game-home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
