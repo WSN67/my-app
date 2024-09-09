@@ -1,7 +1,13 @@
 .playGame {
-    width: 1vw;
-    height: 10vw;
+    width: 20vw;
+    height: 5vw;
     text-align: center;
+
+    font-size: 300%;
+
+
+    min-width: 1vw;
+    min-height: 1vw;
 }
 
 .Game-home-container {
@@ -9,4 +15,31 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+}
+
+select {
+
+    text-align: center;
+
+    cursor: pointer;
+
+    font-size: 2vw;
+    width: 25vw;
+    height: 5vw
+}
+
+select:hover {
+    transition: 0.5s ease;
+    text-decoration: underline;
+    background-color: burlywood;
+    color: black;
+}
+
+option {
+    background-color: darkgrey;
+    color: black;
+}
+
+option:hover {
+    color: white;
 }
