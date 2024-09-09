@@ -43,3 +43,15 @@ option {
 option:hover {
     color: white;
 }
+
+#error-message-button {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    background-color: red;
+    display: none;
+    width: 30vw;
+    height: 3vh;
+    align-items: center;
+    justify-content: center;
+}
