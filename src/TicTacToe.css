@@ -1,0 +1,13 @@
+div .TicTacToe {
+
+    width: 10vw;
+    height: 10vw;
+    display: grid;
+    align-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    justify-content: center;
+}
