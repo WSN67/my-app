@@ -7,5 +7,9 @@ div .square {
     font-size: 7vw;
 
     border: solid 2px black;
-    background-color: aqua;
+    background-color: hsl(180, 100%, 50%);
+}
+
+div .square:hover {
+    background-color: hsla(180, 100%, 50%, 0.5);
 }
