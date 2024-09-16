@@ -10,7 +10,6 @@ function Square(prop) {
         if (checked !== "" || prop.hasWin) return;
 
         if (prop.game === "TicTacToe") {
-            console.log("setSymbol");
             let grid = document.getElementsByClassName("square");
 
             checkWin(grid);
@@ -32,8 +31,6 @@ function Square(prop) {
     }
 
     const checkWin = (grid) => {
-        console.log("checkWin");
-
         const win = [
             [0, 1, 2],
             [3, 4, 5],
