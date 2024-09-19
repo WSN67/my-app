@@ -22,12 +22,37 @@ function Application() {
         ];
         navItems.forEach(item => {
             const navItem = document.createElement('button');
+            navItem.addEventListener('click', navigateToPage);
             navItem.textContent = item.title;
             nav.appendChild(navItem);
         });
         container.appendChild(nav);
     };
 
+
+    function navigateToPage() {
+        switch (this.innerHTML) {
+            case "Home":
+                // TODO
+
+                break;
+            case "Projects":
+                // TODO
+
+                break;
+            case "Games":
+                // TODO
+
+                break;
+            case "Contacts":
+                // TODO
+                break;
+
+            default:
+                console.log("Page not found");
+                break;
+        }
+    }
 
 
 
