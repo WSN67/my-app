@@ -1,4 +1,5 @@
 import Exercise from './Exercise';
+import './Salle.css';
 
 function Salle() {
 
@@ -10,6 +11,11 @@ function Salle() {
 
     return (
         <div className="Salle-home-container">
+            <Exercise exo={exo} />
+            <Exercise exo={exo} />
+            <Exercise exo={exo} />
+            <Exercise exo={exo} />
+            <Exercise exo={exo} />
             <Exercise exo={exo} />
         </div>
     );
