@@ -5,6 +5,11 @@ function Application() {
 
     const secondUrl = "https://miro.medium.com/v2/resize:fit:640/format:webp/1*WslFDeNOddiDA3UYXyndrA.jpeg";
 
+    const [home, setHome] = useState(false);
+    const [projects, setProjects] = useState(false);
+    const [games, setGames] = useState(false);
+    const [contacts, setContacts] = useState(false);
+
     const handleClick = () => {
         // delete the container children
         const container = document.querySelector('.Application-container');
@@ -15,10 +20,10 @@ function Application() {
         const nav = document.createElement('nav');
         nav.className = "Application-nav";
         const navItems = [
-            { title: 'Home', url: '#' },
-            { title: 'Projects', url: '#' },
-            { title: 'Games', url: '#' },
-            { title: 'Contact', url: '#' },
+            { title: 'Home' },
+            { title: 'Projects' },
+            { title: 'Games' },
+            { title: 'Contact' },
         ];
         navItems.forEach(item => {
             const navItem = document.createElement('button');
@@ -34,18 +39,20 @@ function Application() {
         switch (this.innerHTML) {
             case "Home":
                 // TODO
+                setHome(!home);
 
                 break;
             case "Projects":
                 // TODO
-
+                setProjects(!projects);
                 break;
             case "Games":
                 // TODO
-
+                setGames(!games);
                 break;
             case "Contacts":
                 // TODO
+                setContacts(!contacts);
                 break;
 
             default:
