@@ -1,0 +1,33 @@
+div .Exercise-home-container {
+    display: block;
+    justify-items: center;
+    border: solid 2px black;
+    max-width: 10vw;
+    max-height: 20vh;
+}
+
+button {
+    background-color: #284dd2bd;
+    max-width: fit-content;
+    max-height: fit-content;
+    min-width: 4vw;
+    min-height: 4vw;
+
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: xx-large;
+    margin: 0;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color: #0e298d;
+}
+
+button:active {
+    box-shadow: 0 5px #989797;
+    transform: translateZ(4px) scale(1.02);
+
+}

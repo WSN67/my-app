@@ -1,8 +1,10 @@
+import Salle from './Salle';
+
 function Projects() {
 
     return (
         <div className="Projects-home-container">
-            <h1>Projects</h1>
+            <Salle />
         </div>
     );
 }
