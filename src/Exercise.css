@@ -1,25 +1,73 @@
 div .Exercise-home-container {
-    display: block;
+    display: flex;
+    flex-direction: column;
     justify-items: center;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
     border: solid 2px black;
-    max-width: 10vw;
-    max-height: 20vh;
+    max-width: 35vw;
+    max-height: 25vh;
+
 }
 
-button {
+p.Exercise-p {
+    font-size: x-large;
+    margin: 10px;
+    padding: 0;
+    width: 98%;
+    min-width: fit-content;
+    height: 10%;
+}
+
+span.Exercise-buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    margin: 10px;
+    padding: 0;
+    width: 98%;
+    height: 10%;
+}
+
+button.Exercise-button {
     background-color: #284dd2bd;
     max-width: fit-content;
     max-height: fit-content;
-    min-width: 4vw;
-    min-height: 4vw;
+    min-width: 20%;
+    min-height: 98%;
 
     color: white;
     text-align: center;
     display: inline-block;
     font-size: xx-large;
-    margin: 0;
+    margin: 10px;
+    border: 0;
+    padding: 0;
     cursor: pointer;
 
+}
+
+input.Exercise-slider {
+    min-width: fit-content;
+    min-height: 4%;
+
+    accent-color: rgb(219, 158, 38);
+
+    width: 90%;
+    height: fit-content;
+
+    min-width: fit-content;
+    min-height: fit-content;
+    margin: 0;
+    padding: 0;
+}
+
+
+input#title {
+    text-wrap: wrap;
 }
 
 button:hover {
@@ -27,7 +75,7 @@ button:hover {
 }
 
 button:active {
-    box-shadow: 0 5px #989797;
+    background-color: rgb(17, 93, 255);
     transform: translateZ(4px) scale(1.02);
 
 }

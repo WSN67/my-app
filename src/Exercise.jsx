@@ -20,11 +20,13 @@ function Exercise(prop) {
 
     return (
         <div className="Exercise-home-container">
-            <p>{prop.exo.exerciseTitle}</p>
-            <p>{poids}</p>
-            <input type="range" min="2.5" max="100" step="0.5" value={poids} onChange={changePoids} />
-            <button type="button" onClick={add}>+</button>
-            <button type="button" onClick={sub}>-</button>
+            <p className="Exercise-p" id="title">{prop.exo.exerciseTitle}</p>
+            <p className="Exercise-p">{poids} kg</p>
+            <input className="Exercise-slider" type="range" min="2.5" max="100" step="0.5" value={poids} onChange={changePoids} />
+            <span className="Exercise-buttons-container">
+                <button className="Exercise-button" type="button" onClick={sub}>-</button>
+                <button className="Exercise-button" type="button" onClick={add}>+</button>
+            </span>
         </div >
     );
 }
